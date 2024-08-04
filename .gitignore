@@ -1,0 +1,5 @@
+ratingsApp/models/G15_model.pth
+ratingsApp/models/G15_tokenizer/G15_tokenizer/special_tokens_map.json
+ratingsApp/models/G15_tokenizer/G15_tokenizer/tokenizer_config.json
+ratingsApp/models/G15_tokenizer/G15_tokenizer/tokenizer.json
+ratingsApp/models/G15_tokenizer/G15_tokenizer/vocab.txt
