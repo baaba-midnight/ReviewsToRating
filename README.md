@@ -90,8 +90,67 @@ Your application should now be live at your PythonAnywhere URL (usually `[your-u
 Note: Make sure your application is set up to use environment variables for any sensitive information like secret keys or database credentials. PythonAnywhere allows you to set environment variables in the Web tab.
 
 ## Project Structure
-
-
+```
+.
+├── README.md
+├── Ratings
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── db.sqlite3
+├── manage.py
+├── media
+│   └── product_images
+│       ├── Chocolate.jpeg
+│       ├── Chocolate_NEcknpR.jpeg
+│       ├── Mac.jpeg
+│       ├── Perfume.jpeg
+│       ├── pen.jpeg
+│       └── skate_board.jpeg
+├── notebooks
+│   ├── Midsemester_Group_15.ipynb
+│   └── test_AI.ipynb
+├── ratingsApp
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── bert_model.py
+│   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   ├── 0002_reviews.py
+│   │   ├── 0003_alter_reviews_product.py
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   │       ├── 0001_initial.cpython-312.pyc
+│   │       ├── 0002_reviews.cpython-312.pyc
+│   │       ├── 0003_alter_reviews_product.cpython-312.pyc
+│   │       └── __init__.cpython-312.pyc
+│   ├── models
+│   │   ├── G15_model.pth
+│   │   └── G15_tokenizer
+│   │       └── G15_tokenizer
+│   │           ├── special_tokens_map.json
+│   │           ├── tokenizer.json
+│   │           ├── tokenizer_config.json
+│   │           └── vocab.txt
+│   ├── models.py
+│   ├── templates
+│   │   ├── base.html
+│   │   ├── products.html
+│   │   └── reviews.html
+│   ├── templatetags
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   └── custom_filters.cpython-312.pyc
+│   │   └── custom_filters.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+└── requirements.txt
+```
 
 ## Demo
 
