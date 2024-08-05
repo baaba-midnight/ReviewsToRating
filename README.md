@@ -130,7 +130,7 @@ python manage.py runserver
 
 To see a demonstration of how this application works, please watch our video tutorial:
 
-[YouTube Link to Your Demo Video]
+https://youtu.be/FBXTA4LexNA
 
 ## Contact
 
