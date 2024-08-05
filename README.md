@@ -10,6 +10,7 @@ In response to the growing popularity of online shopping, we've developed a plat
 - Utilizes a custom DistilBERT model for natural language processing
 - Implements multi-class classification for accurate rating prediction
 - The application interface runs on Django with an added application of a DBMS, SQLite.
+- Check the directory `notebooks` to access training and testing notebooks. For test access `test_AI.ipynb` and training access `Midsemester_Group_15.ipynb`.
 
 ## Requirements
 
@@ -30,19 +31,23 @@ In response to the growing popularity of online shopping, we've developed a plat
 [Provide instructions on how to use your application, including any command-line arguments or configuration files needed]
 
 ## Hosting the Application: Locally
-1. **Clone the Repository**
+1. Clone the Repository
    
-   ```bash
-   git clone https://github.com/baaba-midnight/ReviewsToRating.git
-   cd ReviewsToRating.git
-   ```
+```bash
+git clone https://github.com/baaba-midnight/ReviewsToRating.git
+```
+```bash
+cd ReviewsToRating.git
+```
    
 2. Create a Virtual Environment
    
-  ```bash
-  python -m venv env
-  env\Scripts\activate (cmd)
-  ```
+```bash
+python -m venv env
+```
+```bash
+env\Scripts\activate (cmd)
+```
 
 3. Install Dependencies
    
