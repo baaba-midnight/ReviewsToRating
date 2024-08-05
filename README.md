@@ -21,10 +21,11 @@ In response to the growing popularity of online shopping, we've developed a plat
 
 ## Installation
 
-1. Clone this repository:
-2. Navigate to the project directory:
-3. Set Up python virtual environment: pip -
-4. Install the required dependencies: pip install -r requirements.txt
+1. Clone this repository
+2. Navigate to the project directory
+3. Set Up python virtual environment
+4. Install the required dependencies
+5. Run the application: Check out the Hosting Application Section
 
 ## Hosting the Application: Locally
 1. Clone the Repository
