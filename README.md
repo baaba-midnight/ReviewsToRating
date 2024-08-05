@@ -26,10 +26,6 @@ In response to the growing popularity of online shopping, we've developed a plat
 3. Set Up python virtual environment: pip -
 4. Install the required dependencies: pip install -r requirements.txt
 
-## Usage
-
-[Provide instructions on how to use your application, including any command-line arguments or configuration files needed]
-
 ## Hosting the Application: Locally
 1. Clone the Repository
    
