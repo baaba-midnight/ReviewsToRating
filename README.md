@@ -34,7 +34,7 @@ In response to the growing popularity of online shopping, we've developed a plat
 git clone https://github.com/baaba-midnight/ReviewsToRating.git
 ```
 ```bash
-cd ReviewsToRating.git
+cd ReviewsToRating
 ```
    
 2. Create a Virtual Environment
