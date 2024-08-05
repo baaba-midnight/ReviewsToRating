@@ -22,72 +22,41 @@ In response to the growing popularity of online shopping, we've developed a plat
 
 1. Clone this repository:
 2. Navigate to the project directory:
-3. Install the required dependencies: pip install -r requirements.txt
+3. Set Up python virtual environment: pip -
+4. Install the required dependencies: pip install -r requirements.txt
 
 ## Usage
 
 [Provide instructions on how to use your application, including any command-line arguments or configuration files needed]
 
-## Hosting the Application
+## Hosting the Application: Locally
+1. **Clone the Repository**
+   
+   ```bash
+   git clone https://github.com/baaba-midnight/ReviewsToRating.git
+   cd ReviewsToRating.git
+   ```
+   
+2. Create a Virtual Environment
+   
+  ```bash
+  python -m venv env
+  env\Scripts\activate (cmd)
+  ```
 
-#### Deployment on PythonAnywhere
-
-To deploy this application on PythonAnywhere, follow these steps:
-
-1. If you haven't already, Sign up for a PythonAnywhere account at https://www.pythonanywhere.com.
-2. Log in to your PythonAnywhere dashboard.
-3. Open a Bash console from the dashboard.
-
-5. Clone this repository
-```
-git clone https://github.com/senseicudjoe/Ratings.git
-```
-
-6. Create a virtual environment
-```
-python -m venv env
-```
-
-8. Activate the virtual environment: Powershell (env/Scripts/Activate.ps1)
-  
-10. Navigate to your project directory: cd [repo-name]
-11. Install the requirements
-```
+3. Install Dependencies
+   
+```bash
 pip install -r requirements.txt
 ```
 
-13. Go to the "Web" tab in the PythonAnywhere dashboard and click on "Add a new web app".
-14. Choose "Manual configuration" and select the Python version that matches your virtual environment.
-    
-16. Set the path to your virtual environment when prompted. It should be something like:
- ```
- /home/[your-pythonanywhere-username]/.virtualenvs/myenv
- ```
+4. Start the Development Server
+   
+```bash
+python manage.py runserver
+```
 
-12. Set your working directory to:
- ```
- /home/[your-pythonanywhere-username]/[your-repo-name]
- ```
-
-13. Modify the WSGI configuration file (there will be a link to edit it in the Web tab). 
- Replace the contents with:
-
- ```python
- import sys
- path = '/home/[your-pythonanywhere-username]/[your-repo-name]'
- if path not in sys.path:
-     sys.path.append(path)
- 
- from [your_main_app_file] import app as application
- ```
-
- Replace `[your_main_app_file]` with the name of your main application file (without the .py extension).
-
-14. Go back to the Web tab and hit the Reload button for your domain.
-
-Your application should now be live at your PythonAnywhere URL (usually `[your-username].pythonanywhere.com`).
-
-Note: Make sure your application is set up to use environment variables for any sensitive information like secret keys or database credentials. PythonAnywhere allows you to set environment variables in the Web tab.
+5. Access the Appliction: Open your web browser and go to `https://localhost:8000`.
 
 ## Project Structure
 ```
@@ -157,10 +126,6 @@ Note: Make sure your application is set up to use environment variables for any 
 To see a demonstration of how this application works, please watch our video tutorial:
 
 [YouTube Link to Your Demo Video]
-
-## License
-
-[Specify the license under which your project is released]
 
 ## Contact
 
