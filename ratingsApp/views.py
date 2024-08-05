@@ -37,26 +37,6 @@ def display_reviews(request,id):
     context = {"reviews":review}
     return render(request,"reviews.html",context)    
 
-"""
-def process_form(request):
-    print("form")
-    if request.method == "POST":
-        review = request.POST['review']
-        pid = request.POST['productId']
-        # review = pre_process(review)
-        # prediction = model.predict(review)
-        ratings = random.randint(1,5)
-        print(review)
-        print(pid)
-        context = {
-            # "products":products,
-            "stars":ratings,
-            "productId":pid,  
-        }    
-        print("Lame")
-        return JsonResponse(context)
-    return redirect('product')
-"""
 
 def home(request):
     return render(request,"base.html",{})
@@ -80,21 +60,7 @@ def predict(comment):
         preds = torch.argmax(outputs, dim=1)
         # probs = torch.softmax(outputs, dim=1)
 
-    return preds
+    return preds + 1
 
-
-
-#Baaba has to code this
-# def pre_process(text):
-#     # remove special characters
-#     text = re.sub(r'[^\w\s]', '', text)
-#     text = ' '.join(text.split())
-#     # Get BERT embeddings
-#     embeddings = bert_model.get_embeddings(text)
-#     print(embeddings.shape)
-
-    
-#     # pass text through tokenizer
-#     tokenizer(text, return_tensors='tf', trancation=True, padding=True, max_length=512)
 
 # Create your views here.
